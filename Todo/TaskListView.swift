@@ -10,8 +10,11 @@ import SwiftUI
 struct TaskListView: View {
     @ObservedObject var taskStore: TaskStore
     var body: some View {
-        List(taskStore.tasks) { task in
-            Text(task.name)
+        List {
+            ForEach(taskStore.tasks) { task in
+                Text(task.name)
+                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .scale))
+            }
         }
     }
 }
