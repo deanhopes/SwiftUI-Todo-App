@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TodoApp: App {
+    // This is your shared instance of TaskStore
+    @StateObject var taskStore = TaskStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(taskStore: taskStore)
         }
     }
 }

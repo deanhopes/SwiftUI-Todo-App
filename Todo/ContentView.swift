@@ -8,19 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var taskStore: TaskStore
+    @State var newTaskName: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                TextField("New Task", text: $newTaskName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                Button(action: addTask) {
+                    Text("Add Task")
+                }
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(12)
+                NavigationLink(destination: TaskListView(taskStore: taskStore)) {
+                        Text("Go to Task List")
+                }
+            }
         }
-        .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    private func addTask() {
+        taskStore.addTask(name: newTaskName)
+        newTaskName = ""
+    }
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView(taskStore: TaskStore())
+        }
     }
 }

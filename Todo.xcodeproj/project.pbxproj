@@ -14,6 +14,8 @@
 		8A866F452A69795E001A637C /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A866F442A69795E001A637C /* TodoTests.swift */; };
 		8A866F4F2A69795E001A637C /* TodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A866F4E2A69795E001A637C /* TodoUITests.swift */; };
 		8A866F512A69795E001A637C /* TodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A866F502A69795E001A637C /* TodoUITestsLaunchTests.swift */; };
+		8A866F5E2A697AA5001A637C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A866F5D2A697AA5001A637C /* Task.swift */; };
+		8A866F602A697B04001A637C /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A866F5F2A697B04001A637C /* TaskListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		8A866F4A2A69795E001A637C /* TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A866F4E2A69795E001A637C /* TodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITests.swift; sourceTree = "<group>"; };
 		8A866F502A69795E001A637C /* TodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A866F5D2A697AA5001A637C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8A866F5F2A697B04001A637C /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				8A866F332A69795D001A637C /* TodoApp.swift */,
 				8A866F352A69795D001A637C /* ContentView.swift */,
+				8A866F5D2A697AA5001A637C /* Task.swift */,
+				8A866F5F2A697B04001A637C /* TaskListView.swift */,
 				8A866F372A69795E001A637C /* Assets.xcassets */,
 				8A866F392A69795E001A637C /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A866F362A69795D001A637C /* ContentView.swift in Sources */,
+				8A866F5E2A697AA5001A637C /* Task.swift in Sources */,
 				8A866F342A69795D001A637C /* TodoApp.swift in Sources */,
+				8A866F602A697B04001A637C /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
