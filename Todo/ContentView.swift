@@ -18,8 +18,8 @@ struct ContentView: View {
             HStack {
                 TextField("New Task", text: $newTaskName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(height: 50) // Increase height here
-                    .padding(EdgeInsets(top:4, leading: 20, bottom: 4, trailing: 0)) // Increase left padding here
+                    .frame(height: 50)
+                    .padding(EdgeInsets(top:4, leading: 20, bottom: 4, trailing: 0))
                 Button(action: addTask) {
                     Text("+")
                         .frame(minWidth: 24, maxWidth: 40)
